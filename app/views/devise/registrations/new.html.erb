@@ -7,6 +7,11 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  
+  <div class="input-group-prepend">
+              <span class="input-group-text" aria-hidden="true"><i class="fas fa-user"></i></span>
+            </div>
+            <%= f.text_field :name, autofocus: true, class: "form-control", placeholder: "ユーザー名" %>
 
   <div class="field">
     <%= f.label :email %><br />
